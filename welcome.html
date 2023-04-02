@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="assests/style/bootstrap.min.css">
+        <link rel="stylesheet" href="assests/style/style.css">
+        <title>CRUD :)</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="head">
+                <h1 class="position-relative"> <span id="identity" class="active">Hello Admin</span></h1>
+            </div>
+            <div class="form my-5">
+                <div id="errorform">
+                    <label for="">PRODUCT NAME</label>
+                    <input type="text" name="Product Name" class="form-control mb-3" id="name" placeholder="Product Name..">
+                    <p class="error"></p>
+                    <label for="price">PRODUCT PRICE</label>
+                    <input type="number" name="Product Price" class="form-control mb-3" id="price"placeholder="Product Price..">
+                    <p class="error"></p>
+                    <label for="cat">PRODUCT CATEGORY</label>
+                    <input type="text" name="Category" class="form-control mb-3" id="cat" placeholder="Product Category..">
+                    <p class="error"></p>
+                    
+                    <label for="desc">PRODUCT DESCRIPTION</label>
+                    <input type="text" name="Product Description" class="form-control mb-3" id="desc"placeholder="Product description..">
+                    <p class="error"></p>
+                    
+                    <button class="btn btn-info text-dark mb-3" id="addBtn">Add Product</button>
+                    <button class="btn btn-success text-dark mb-3 show" id="updateBtn">Update Product</button>
+                    <p class="text-danger text-center fw-bold" id="emp"></p>
+                    
+                    
+                </div>
+                <input type="search" class="form-control mb-3" id="searchInpt" placeholder="search..">
+                
+                <div id="error"></div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>category</th>
+                            <th>Desc</th>
+                            <th>Delete</th>
+                            <th>Update</th>
+                        </tr>
+                    </thead>
+                    <tbody id="info">
+                        
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <script src="assests/script/bootstrap.bundle.min.js"></script>
+        <script src="assests/script/welcome.js"></script>
+    </body>
+</html>
